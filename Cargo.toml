@@ -1,0 +1,25 @@
+[package]
+name = "smbclient-sys"
+version = "0.1.0"
+authors = ["Mahmut Bulut <vertexclique@gmail.com>"]
+description = "FFI bindings to libsmbclient"
+license = "MIT"
+homepage = "https://github.com/vertexclique/smbclient-sys"
+documentation = "https://vertexclique.github.io/smbclient-sys/"
+repository = "https://github.com/vertexclique/smbclient-sys"
+readme = "README.md"
+keywords = ["samba", "smb", "cifs", "smbclient", "nas"]
+
+build = "build.rs"
+links = "smbclient"
+
+exclude = [
+    ".gitignore",
+    ".travis.yml",
+]
+
+[dependencies]
+libc = "0.1.8"
+
+[build-dependencies]
+pkg-config = "0.3.5"
