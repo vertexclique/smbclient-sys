@@ -4,7 +4,7 @@
 
 extern crate libc;
 
-use libc::{c_int, c_char, c_double, c_void, c_uchar, c_uint, c_ulong};
+use libc::{c_int, c_char, c_double, c_void, c_uchar, c_uint, c_ulong, c_ushort, size_t, time_t};
 
 static SMBC_BASE_FD        : i32 = 10000; /* smallest file descriptor returned */
 static SMBC_WORKGROUP      : i32 = 1;
@@ -116,6 +116,34 @@ pub enum smbc_vfs_feature {
 }
 
 pub type smbc_bool = c_int;
+
+#[repr(C)]
+pub struct print_job_info {
+	/** numeric ID of the print job
+	 */
+	pub id: c_ushort,
+
+	/** represents print job priority (lower numbers mean higher priority)
+	 */
+	pub priority: c_ushort,
+
+	/** Size of the print job
+	 */
+	pub size: size_t,
+
+	/** Name of the user that owns the print job
+	 */
+	pub user: [c_char; 128],
+
+	/** Name of the print job. This will have no name if an anonymous print
+	 *  file was opened. Ie smb://server/printer
+	 */
+	pub name: [c_char; 128],
+
+	/** Time the print job was spooled
+	 */
+	pub t: time_t,
+}
 
 #[test]
 fn test_name() {
