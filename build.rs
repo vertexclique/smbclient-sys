@@ -1,4 +1,3 @@
-use std::env;
 extern crate pkg_config;
 
 fn main ()
