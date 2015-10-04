@@ -1,15 +1,17 @@
 #![allow(non_camel_case_types)]
 #![allow(missing_copy_implementations)]
-#![allow(unstable)]
+#![allow(unused_imports)]
+#![allow(dead_code)]
 
 extern crate libc;
+extern crate nix;
 
 use std::{option, mem, clone, default};
 
 use libc::{c_int, c_char, c_double, c_void, c_uchar, c_uint, c_ulong, c_ushort, size_t, time_t,
 	mode_t, ssize_t, off_t, stat, timeval};
 
-extern crate posix;
+use nix::sys::statvfs::vfs::Statvfs;
 
 static SMBC_BASE_FD        : i32 = 10000; /* smallest file descriptor returned */
 static SMBC_WORKGROUP      : i32 = 1;
@@ -266,11 +268,11 @@ pub type smbc_fstat_fn =
 pub type smbc_statvfs_fn =
     option::Option<extern "C" fn(c: *mut SMBCCTX,
                                         path: *mut c_char,
-                                        st: *mut Struct_statvfs)
+                                        st: *mut Statvfs)
                               -> c_int>;
 pub type smbc_fstatvfs_fn =
     option::Option<extern "C" fn(c: *mut SMBCCTX, file: *mut SMBCFILE,
-                                        st: *mut Struct_statvfs)
+                                        st: *mut Statvfs)
                               -> c_int>;
 pub type smbc_ftruncate_fn =
     option::Option<extern "C" fn(c: *mut SMBCCTX, f: *mut SMBCFILE,
@@ -671,9 +673,9 @@ extern "C" {
      -> c_int;
     pub fn smbc_fstat(fd: c_int, st: *mut stat)
      -> c_int;
-    pub fn smbc_statvfs(url: *mut c_char, st: *mut Struct_statvfs)
+    pub fn smbc_statvfs(url: *mut c_char, st: *mut Statvfs)
      -> c_int;
-    pub fn smbc_fstatvfs(fd: c_int, st: *mut Struct_statvfs)
+    pub fn smbc_fstatvfs(fd: c_int, st: *mut Statvfs)
      -> c_int;
     pub fn smbc_ftruncate(fd: c_int, size: off_t) -> c_int;
     pub fn smbc_chmod(url: *const c_char, mode: mode_t)
