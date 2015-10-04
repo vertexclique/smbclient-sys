@@ -18,6 +18,10 @@ exclude = [
     ".travis.yml",
 ]
 
+[lib]
+name = "smbclient_sys"
+path = "src/lib.rs"
+
 [dependencies]
 libc = "0.1.8"
 nix = "0.4.1"
