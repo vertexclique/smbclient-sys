@@ -4,10 +4,10 @@ smbclient-sys
 
 FFI wrapper around libsmbclient which is the part of SAMBA implementation.
 
-[![Build Status](https://travis-ci.org/vertexclique/smbclient-sys.svg?branch=master)](https://travis-ci.org/vertexclique/smbclient-sys)
+[![Travis](https://img.shields.io/travis/vertexclique/smbclient-sys.svg?style=flat-square)]()
 |
 [![Crates.io](https://img.shields.io/crates/v/smbclient-sys.svg?style=flat-square)]()
-| [Documentation](http://vertexclique.github.io/smbclient-sys/smbclient-sys/index.html)
+| [![Documentation](https://img.shields.io/badge/documentation-0.1.0-blue.svg?style=flat-square)](http://vertexclique.github.io/smbclient-sys/smbclient_sys/index.html)
 
 Usage
 ------------
@@ -15,7 +15,7 @@ Usage
 Add this to your `Cargo.toml`
 
 ```
-smbclient-sys = "0.1.0"
+smbclient_sys = "0.1.0"
 ```
 
 To access a SMB share and read a file:

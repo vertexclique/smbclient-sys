@@ -8,7 +8,7 @@ homepage = "https://github.com/vertexclique/smbclient-sys"
 documentation = "https://vertexclique.github.io/smbclient-sys/"
 repository = "https://github.com/vertexclique/smbclient-sys"
 readme = "README.md"
-keywords = ["samba", "smb", "cifs", "smbclient", "netbios", "netbeui"]
+keywords = ["samba", "smb", "cifs", "smbclient", "netbios"]
 
 build = "build.rs"
 links = "smbclient"
