@@ -1,26 +1,3 @@
-smbclient-sys
-=====================
-![Samba](http://wiki.univention.de/images/thumb/6/6d/Logo_Samba.png/300px-Logo_Samba.png)
-
-FFI wrapper around libsmbclient which is the part of SAMBA implementation.
-
-[![Travis](https://img.shields.io/travis/vertexclique/smbclient-sys.svg?style=flat-square)]()
-|
-[![Crates.io](https://img.shields.io/crates/v/smbclient-sys.svg?style=flat-square)]()
-| [![Documentation](https://img.shields.io/badge/documentation-0.1.0-blue.svg?style=flat-square)](http://vertexclique.github.io/smbclient-sys/smbclient_sys/index.html)
-
-Usage
-------------
-
-Add this to your `Cargo.toml`
-
-```
-smbclient_sys = "0.1.0"
-```
-
-To access a SMB share and read a file:
-
-```
 extern crate smbclient_sys as smbc;
 extern crate libc;
 
@@ -38,7 +15,7 @@ extern "C" fn auth_data(srv: *const c_char,
             pwlen: c_int) {
                 unsafe {
         strncpy(un, CString::new("vertexclique").unwrap().as_ptr(), 12);
-        strncpy(pw, CString::new("1234").unwrap().as_ptr(), 3);
+        strncpy(pw, CString::new("1234").unwrap().as_ptr(), 4);
     }
 }
 
@@ -81,13 +58,3 @@ fn main() {
         }
     }
 }
-
-```
-
-For more information please see the `examples` dir.
-
-Requirements
-------------
-
-* `libsmbclient` is needed with development environment
-* Some of the systems need `udev` with samba packages. (optional dependency)
