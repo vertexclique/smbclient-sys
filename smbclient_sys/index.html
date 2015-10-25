@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `smbclient_sys` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, smbclient_sys">
+
+    <title>smbclient_sys - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'smbclient_sys', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>smbclient_sys</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-0' class='srclink' href='../src/smbclient_sys/lib.rs.html#1-805' title='goto source code'>[src]</a></span></h1>
+<h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct._SMBCCTX.html'
+                               title='smbclient_sys::_SMBCCTX'>_SMBCCTX</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct._smbc_callbacks.html'
+                               title='smbclient_sys::_smbc_callbacks'>_smbc_callbacks</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct._smbc_options.html'
+                               title='smbclient_sys::_smbc_options'>_smbc_options</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.print_job_info.html'
+                               title='smbclient_sys::print_job_info'>print_job_info</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.smbc_dirent.html'
+                               title='smbclient_sys::smbc_dirent'>smbc_dirent</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.SMBC_internal_data.html'
+                               title='smbclient_sys::SMBC_internal_data'>SMBC_internal_data</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum._SMBCFILE.html'
+                               title='smbclient_sys::_SMBCFILE'>_SMBCFILE</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum._SMBCSRV.html'
+                               title='smbclient_sys::_SMBCSRV'>_SMBCSRV</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.smbc_server_cache.html'
+                               title='smbclient_sys::smbc_server_cache'>smbc_server_cache</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                </table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_ENCRYPTLEVEL_NONE.html'
+                               title='smbclient_sys::SMBC_ENCRYPTLEVEL_NONE'>SMBC_ENCRYPTLEVEL_NONE</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_ENCRYPTLEVEL_REQUEST.html'
+                               title='smbclient_sys::SMBC_ENCRYPTLEVEL_REQUEST'>SMBC_ENCRYPTLEVEL_REQUEST</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_ENCRYPTLEVEL_REQUIRE.html'
+                               title='smbclient_sys::SMBC_ENCRYPTLEVEL_REQUIRE'>SMBC_ENCRYPTLEVEL_REQUIRE</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_SHAREMODE_DENY_ALL.html'
+                               title='smbclient_sys::SMBC_SHAREMODE_DENY_ALL'>SMBC_SHAREMODE_DENY_ALL</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_SHAREMODE_DENY_DOS.html'
+                               title='smbclient_sys::SMBC_SHAREMODE_DENY_DOS'>SMBC_SHAREMODE_DENY_DOS</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_SHAREMODE_DENY_FCB.html'
+                               title='smbclient_sys::SMBC_SHAREMODE_DENY_FCB'>SMBC_SHAREMODE_DENY_FCB</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_SHAREMODE_DENY_NONE.html'
+                               title='smbclient_sys::SMBC_SHAREMODE_DENY_NONE'>SMBC_SHAREMODE_DENY_NONE</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_SHAREMODE_DENY_READ.html'
+                               title='smbclient_sys::SMBC_SHAREMODE_DENY_READ'>SMBC_SHAREMODE_DENY_READ</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_SHAREMODE_DENY_WRITE.html'
+                               title='smbclient_sys::SMBC_SHAREMODE_DENY_WRITE'>SMBC_SHAREMODE_DENY_WRITE</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_VFS_FEATURE_CASE_INSENSITIVE.html'
+                               title='smbclient_sys::SMBC_VFS_FEATURE_CASE_INSENSITIVE'>SMBC_VFS_FEATURE_CASE_INSENSITIVE</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_VFS_FEATURE_DFS.html'
+                               title='smbclient_sys::SMBC_VFS_FEATURE_DFS'>SMBC_VFS_FEATURE_DFS</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_VFS_FEATURE_NO_UNIXCIFS.html'
+                               title='smbclient_sys::SMBC_VFS_FEATURE_NO_UNIXCIFS'>SMBC_VFS_FEATURE_NO_UNIXCIFS</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='constant' href='constant.SMBC_VFS_FEATURE_RDONLY.html'
+                               title='smbclient_sys::SMBC_VFS_FEATURE_RDONLY'>SMBC_VFS_FEATURE_RDONLY</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_chmod.html'
+                               title='smbclient_sys::smbc_chmod'>smbc_chmod</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_close.html'
+                               title='smbclient_sys::smbc_close'>smbc_close</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_closedir.html'
+                               title='smbclient_sys::smbc_closedir'>smbc_closedir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_creat.html'
+                               title='smbclient_sys::smbc_creat'>smbc_creat</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_fgetxattr.html'
+                               title='smbclient_sys::smbc_fgetxattr'>smbc_fgetxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_flistxattr.html'
+                               title='smbclient_sys::smbc_flistxattr'>smbc_flistxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_free_context.html'
+                               title='smbclient_sys::smbc_free_context'>smbc_free_context</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_fremovexattr.html'
+                               title='smbclient_sys::smbc_fremovexattr'>smbc_fremovexattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_fsetxattr.html'
+                               title='smbclient_sys::smbc_fsetxattr'>smbc_fsetxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_fstat.html'
+                               title='smbclient_sys::smbc_fstat'>smbc_fstat</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_fstatvfs.html'
+                               title='smbclient_sys::smbc_fstatvfs'>smbc_fstatvfs</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_ftruncate.html'
+                               title='smbclient_sys::smbc_ftruncate'>smbc_ftruncate</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getDebug.html'
+                               title='smbclient_sys::smbc_getDebug'>smbc_getDebug</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionAddCachedServer.html'
+                               title='smbclient_sys::smbc_getFunctionAddCachedServer'>smbc_getFunctionAddCachedServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionAuthData.html'
+                               title='smbclient_sys::smbc_getFunctionAuthData'>smbc_getFunctionAuthData</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionAuthDataWithContext.html'
+                               title='smbclient_sys::smbc_getFunctionAuthDataWithContext'>smbc_getFunctionAuthDataWithContext</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionCheckServer.html'
+                               title='smbclient_sys::smbc_getFunctionCheckServer'>smbc_getFunctionCheckServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionChmod.html'
+                               title='smbclient_sys::smbc_getFunctionChmod'>smbc_getFunctionChmod</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionClose.html'
+                               title='smbclient_sys::smbc_getFunctionClose'>smbc_getFunctionClose</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionClosedir.html'
+                               title='smbclient_sys::smbc_getFunctionClosedir'>smbc_getFunctionClosedir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionCreat.html'
+                               title='smbclient_sys::smbc_getFunctionCreat'>smbc_getFunctionCreat</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionFstat.html'
+                               title='smbclient_sys::smbc_getFunctionFstat'>smbc_getFunctionFstat</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionFstatVFS.html'
+                               title='smbclient_sys::smbc_getFunctionFstatVFS'>smbc_getFunctionFstatVFS</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionFstatdir.html'
+                               title='smbclient_sys::smbc_getFunctionFstatdir'>smbc_getFunctionFstatdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionFtruncate.html'
+                               title='smbclient_sys::smbc_getFunctionFtruncate'>smbc_getFunctionFtruncate</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionGetCachedServer.html'
+                               title='smbclient_sys::smbc_getFunctionGetCachedServer'>smbc_getFunctionGetCachedServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionGetdents.html'
+                               title='smbclient_sys::smbc_getFunctionGetdents'>smbc_getFunctionGetdents</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionGetxattr.html'
+                               title='smbclient_sys::smbc_getFunctionGetxattr'>smbc_getFunctionGetxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionListPrintJobs.html'
+                               title='smbclient_sys::smbc_getFunctionListPrintJobs'>smbc_getFunctionListPrintJobs</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionListxattr.html'
+                               title='smbclient_sys::smbc_getFunctionListxattr'>smbc_getFunctionListxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionLseek.html'
+                               title='smbclient_sys::smbc_getFunctionLseek'>smbc_getFunctionLseek</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionLseekdir.html'
+                               title='smbclient_sys::smbc_getFunctionLseekdir'>smbc_getFunctionLseekdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionMkdir.html'
+                               title='smbclient_sys::smbc_getFunctionMkdir'>smbc_getFunctionMkdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionOpen.html'
+                               title='smbclient_sys::smbc_getFunctionOpen'>smbc_getFunctionOpen</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionOpenPrintJob.html'
+                               title='smbclient_sys::smbc_getFunctionOpenPrintJob'>smbc_getFunctionOpenPrintJob</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionOpendir.html'
+                               title='smbclient_sys::smbc_getFunctionOpendir'>smbc_getFunctionOpendir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionPrintFile.html'
+                               title='smbclient_sys::smbc_getFunctionPrintFile'>smbc_getFunctionPrintFile</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionPurgeCachedServers.html'
+                               title='smbclient_sys::smbc_getFunctionPurgeCachedServers'>smbc_getFunctionPurgeCachedServers</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionRead.html'
+                               title='smbclient_sys::smbc_getFunctionRead'>smbc_getFunctionRead</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionReaddir.html'
+                               title='smbclient_sys::smbc_getFunctionReaddir'>smbc_getFunctionReaddir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionRemoveCachedServer.html'
+                               title='smbclient_sys::smbc_getFunctionRemoveCachedServer'>smbc_getFunctionRemoveCachedServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionRemoveUnusedServer.html'
+                               title='smbclient_sys::smbc_getFunctionRemoveUnusedServer'>smbc_getFunctionRemoveUnusedServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionRemovexattr.html'
+                               title='smbclient_sys::smbc_getFunctionRemovexattr'>smbc_getFunctionRemovexattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionRename.html'
+                               title='smbclient_sys::smbc_getFunctionRename'>smbc_getFunctionRename</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionRmdir.html'
+                               title='smbclient_sys::smbc_getFunctionRmdir'>smbc_getFunctionRmdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionSetxattr.html'
+                               title='smbclient_sys::smbc_getFunctionSetxattr'>smbc_getFunctionSetxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionStat.html'
+                               title='smbclient_sys::smbc_getFunctionStat'>smbc_getFunctionStat</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionStatVFS.html'
+                               title='smbclient_sys::smbc_getFunctionStatVFS'>smbc_getFunctionStatVFS</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionTelldir.html'
+                               title='smbclient_sys::smbc_getFunctionTelldir'>smbc_getFunctionTelldir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionUnlink.html'
+                               title='smbclient_sys::smbc_getFunctionUnlink'>smbc_getFunctionUnlink</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionUnlinkPrintJob.html'
+                               title='smbclient_sys::smbc_getFunctionUnlinkPrintJob'>smbc_getFunctionUnlinkPrintJob</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionUtimes.html'
+                               title='smbclient_sys::smbc_getFunctionUtimes'>smbc_getFunctionUtimes</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getFunctionWrite.html'
+                               title='smbclient_sys::smbc_getFunctionWrite'>smbc_getFunctionWrite</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getNetbiosName.html'
+                               title='smbclient_sys::smbc_getNetbiosName'>smbc_getNetbiosName</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionBrowseMaxLmbCount.html'
+                               title='smbclient_sys::smbc_getOptionBrowseMaxLmbCount'>smbc_getOptionBrowseMaxLmbCount</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionCaseSensitive.html'
+                               title='smbclient_sys::smbc_getOptionCaseSensitive'>smbc_getOptionCaseSensitive</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionDebugToStderr.html'
+                               title='smbclient_sys::smbc_getOptionDebugToStderr'>smbc_getOptionDebugToStderr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionFallbackAfterKerberos.html'
+                               title='smbclient_sys::smbc_getOptionFallbackAfterKerberos'>smbc_getOptionFallbackAfterKerberos</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionFullTimeNames.html'
+                               title='smbclient_sys::smbc_getOptionFullTimeNames'>smbc_getOptionFullTimeNames</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionNoAutoAnonymousLogin.html'
+                               title='smbclient_sys::smbc_getOptionNoAutoAnonymousLogin'>smbc_getOptionNoAutoAnonymousLogin</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionOneSharePerServer.html'
+                               title='smbclient_sys::smbc_getOptionOneSharePerServer'>smbc_getOptionOneSharePerServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionOpenShareMode.html'
+                               title='smbclient_sys::smbc_getOptionOpenShareMode'>smbc_getOptionOpenShareMode</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionSmbEncryptionLevel.html'
+                               title='smbclient_sys::smbc_getOptionSmbEncryptionLevel'>smbc_getOptionSmbEncryptionLevel</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionUrlEncodeReaddirEntries.html'
+                               title='smbclient_sys::smbc_getOptionUrlEncodeReaddirEntries'>smbc_getOptionUrlEncodeReaddirEntries</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionUseCCache.html'
+                               title='smbclient_sys::smbc_getOptionUseCCache'>smbc_getOptionUseCCache</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionUseKerberos.html'
+                               title='smbclient_sys::smbc_getOptionUseKerberos'>smbc_getOptionUseKerberos</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getOptionUserData.html'
+                               title='smbclient_sys::smbc_getOptionUserData'>smbc_getOptionUserData</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getServerCacheData.html'
+                               title='smbclient_sys::smbc_getServerCacheData'>smbc_getServerCacheData</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getTimeout.html'
+                               title='smbclient_sys::smbc_getTimeout'>smbc_getTimeout</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getUser.html'
+                               title='smbclient_sys::smbc_getUser'>smbc_getUser</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getWorkgroup.html'
+                               title='smbclient_sys::smbc_getWorkgroup'>smbc_getWorkgroup</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getdents.html'
+                               title='smbclient_sys::smbc_getdents'>smbc_getdents</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_getxattr.html'
+                               title='smbclient_sys::smbc_getxattr'>smbc_getxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_init.html'
+                               title='smbclient_sys::smbc_init'>smbc_init</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_init_context.html'
+                               title='smbclient_sys::smbc_init_context'>smbc_init_context</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_lgetxattr.html'
+                               title='smbclient_sys::smbc_lgetxattr'>smbc_lgetxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_list_print_jobs.html'
+                               title='smbclient_sys::smbc_list_print_jobs'>smbc_list_print_jobs</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_listxattr.html'
+                               title='smbclient_sys::smbc_listxattr'>smbc_listxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_llistxattr.html'
+                               title='smbclient_sys::smbc_llistxattr'>smbc_llistxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_lremovexattr.html'
+                               title='smbclient_sys::smbc_lremovexattr'>smbc_lremovexattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_lseek.html'
+                               title='smbclient_sys::smbc_lseek'>smbc_lseek</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_lseekdir.html'
+                               title='smbclient_sys::smbc_lseekdir'>smbc_lseekdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_lsetxattr.html'
+                               title='smbclient_sys::smbc_lsetxattr'>smbc_lsetxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_mkdir.html'
+                               title='smbclient_sys::smbc_mkdir'>smbc_mkdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_new_context.html'
+                               title='smbclient_sys::smbc_new_context'>smbc_new_context</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_open.html'
+                               title='smbclient_sys::smbc_open'>smbc_open</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_open_print_job.html'
+                               title='smbclient_sys::smbc_open_print_job'>smbc_open_print_job</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_opendir.html'
+                               title='smbclient_sys::smbc_opendir'>smbc_opendir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_option_get.html'
+                               title='smbclient_sys::smbc_option_get'>smbc_option_get</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_option_set.html'
+                               title='smbclient_sys::smbc_option_set'>smbc_option_set</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_print_file.html'
+                               title='smbclient_sys::smbc_print_file'>smbc_print_file</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_read.html'
+                               title='smbclient_sys::smbc_read'>smbc_read</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_readdir.html'
+                               title='smbclient_sys::smbc_readdir'>smbc_readdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_remove_unused_server.html'
+                               title='smbclient_sys::smbc_remove_unused_server'>smbc_remove_unused_server</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_removexattr.html'
+                               title='smbclient_sys::smbc_removexattr'>smbc_removexattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_rename.html'
+                               title='smbclient_sys::smbc_rename'>smbc_rename</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_rmdir.html'
+                               title='smbclient_sys::smbc_rmdir'>smbc_rmdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setDebug.html'
+                               title='smbclient_sys::smbc_setDebug'>smbc_setDebug</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionAddCachedServer.html'
+                               title='smbclient_sys::smbc_setFunctionAddCachedServer'>smbc_setFunctionAddCachedServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionAuthData.html'
+                               title='smbclient_sys::smbc_setFunctionAuthData'>smbc_setFunctionAuthData</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionAuthDataWithContext.html'
+                               title='smbclient_sys::smbc_setFunctionAuthDataWithContext'>smbc_setFunctionAuthDataWithContext</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionCheckServer.html'
+                               title='smbclient_sys::smbc_setFunctionCheckServer'>smbc_setFunctionCheckServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionChmod.html'
+                               title='smbclient_sys::smbc_setFunctionChmod'>smbc_setFunctionChmod</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionClose.html'
+                               title='smbclient_sys::smbc_setFunctionClose'>smbc_setFunctionClose</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionClosedir.html'
+                               title='smbclient_sys::smbc_setFunctionClosedir'>smbc_setFunctionClosedir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionCreat.html'
+                               title='smbclient_sys::smbc_setFunctionCreat'>smbc_setFunctionCreat</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionFstat.html'
+                               title='smbclient_sys::smbc_setFunctionFstat'>smbc_setFunctionFstat</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionFstatVFS.html'
+                               title='smbclient_sys::smbc_setFunctionFstatVFS'>smbc_setFunctionFstatVFS</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionFstatdir.html'
+                               title='smbclient_sys::smbc_setFunctionFstatdir'>smbc_setFunctionFstatdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionFtruncate.html'
+                               title='smbclient_sys::smbc_setFunctionFtruncate'>smbc_setFunctionFtruncate</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionGetCachedServer.html'
+                               title='smbclient_sys::smbc_setFunctionGetCachedServer'>smbc_setFunctionGetCachedServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionGetdents.html'
+                               title='smbclient_sys::smbc_setFunctionGetdents'>smbc_setFunctionGetdents</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionGetxattr.html'
+                               title='smbclient_sys::smbc_setFunctionGetxattr'>smbc_setFunctionGetxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionListPrintJobs.html'
+                               title='smbclient_sys::smbc_setFunctionListPrintJobs'>smbc_setFunctionListPrintJobs</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionListxattr.html'
+                               title='smbclient_sys::smbc_setFunctionListxattr'>smbc_setFunctionListxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionLseek.html'
+                               title='smbclient_sys::smbc_setFunctionLseek'>smbc_setFunctionLseek</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionLseekdir.html'
+                               title='smbclient_sys::smbc_setFunctionLseekdir'>smbc_setFunctionLseekdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionMkdir.html'
+                               title='smbclient_sys::smbc_setFunctionMkdir'>smbc_setFunctionMkdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionOpen.html'
+                               title='smbclient_sys::smbc_setFunctionOpen'>smbc_setFunctionOpen</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionOpenPrintJob.html'
+                               title='smbclient_sys::smbc_setFunctionOpenPrintJob'>smbc_setFunctionOpenPrintJob</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionOpendir.html'
+                               title='smbclient_sys::smbc_setFunctionOpendir'>smbc_setFunctionOpendir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionPrintFile.html'
+                               title='smbclient_sys::smbc_setFunctionPrintFile'>smbc_setFunctionPrintFile</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionPurgeCachedServers.html'
+                               title='smbclient_sys::smbc_setFunctionPurgeCachedServers'>smbc_setFunctionPurgeCachedServers</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionRead.html'
+                               title='smbclient_sys::smbc_setFunctionRead'>smbc_setFunctionRead</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionReaddir.html'
+                               title='smbclient_sys::smbc_setFunctionReaddir'>smbc_setFunctionReaddir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionRemoveCachedServer.html'
+                               title='smbclient_sys::smbc_setFunctionRemoveCachedServer'>smbc_setFunctionRemoveCachedServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionRemoveUnusedServer.html'
+                               title='smbclient_sys::smbc_setFunctionRemoveUnusedServer'>smbc_setFunctionRemoveUnusedServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionRemovexattr.html'
+                               title='smbclient_sys::smbc_setFunctionRemovexattr'>smbc_setFunctionRemovexattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionRename.html'
+                               title='smbclient_sys::smbc_setFunctionRename'>smbc_setFunctionRename</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionRmdir.html'
+                               title='smbclient_sys::smbc_setFunctionRmdir'>smbc_setFunctionRmdir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionSetxattr.html'
+                               title='smbclient_sys::smbc_setFunctionSetxattr'>smbc_setFunctionSetxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionStat.html'
+                               title='smbclient_sys::smbc_setFunctionStat'>smbc_setFunctionStat</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionStatVFS.html'
+                               title='smbclient_sys::smbc_setFunctionStatVFS'>smbc_setFunctionStatVFS</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionTelldir.html'
+                               title='smbclient_sys::smbc_setFunctionTelldir'>smbc_setFunctionTelldir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionUnlink.html'
+                               title='smbclient_sys::smbc_setFunctionUnlink'>smbc_setFunctionUnlink</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionUnlinkPrintJob.html'
+                               title='smbclient_sys::smbc_setFunctionUnlinkPrintJob'>smbc_setFunctionUnlinkPrintJob</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionUtimes.html'
+                               title='smbclient_sys::smbc_setFunctionUtimes'>smbc_setFunctionUtimes</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setFunctionWrite.html'
+                               title='smbclient_sys::smbc_setFunctionWrite'>smbc_setFunctionWrite</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setNetbiosName.html'
+                               title='smbclient_sys::smbc_setNetbiosName'>smbc_setNetbiosName</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionBrowseMaxLmbCount.html'
+                               title='smbclient_sys::smbc_setOptionBrowseMaxLmbCount'>smbc_setOptionBrowseMaxLmbCount</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionCaseSensitive.html'
+                               title='smbclient_sys::smbc_setOptionCaseSensitive'>smbc_setOptionCaseSensitive</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionDebugToStderr.html'
+                               title='smbclient_sys::smbc_setOptionDebugToStderr'>smbc_setOptionDebugToStderr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionFallbackAfterKerberos.html'
+                               title='smbclient_sys::smbc_setOptionFallbackAfterKerberos'>smbc_setOptionFallbackAfterKerberos</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionFullTimeNames.html'
+                               title='smbclient_sys::smbc_setOptionFullTimeNames'>smbc_setOptionFullTimeNames</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionNoAutoAnonymousLogin.html'
+                               title='smbclient_sys::smbc_setOptionNoAutoAnonymousLogin'>smbc_setOptionNoAutoAnonymousLogin</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionOneSharePerServer.html'
+                               title='smbclient_sys::smbc_setOptionOneSharePerServer'>smbc_setOptionOneSharePerServer</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionOpenShareMode.html'
+                               title='smbclient_sys::smbc_setOptionOpenShareMode'>smbc_setOptionOpenShareMode</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionSmbEncryptionLevel.html'
+                               title='smbclient_sys::smbc_setOptionSmbEncryptionLevel'>smbc_setOptionSmbEncryptionLevel</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionUrlEncodeReaddirEntries.html'
+                               title='smbclient_sys::smbc_setOptionUrlEncodeReaddirEntries'>smbc_setOptionUrlEncodeReaddirEntries</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionUseCCache.html'
+                               title='smbclient_sys::smbc_setOptionUseCCache'>smbc_setOptionUseCCache</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionUseKerberos.html'
+                               title='smbclient_sys::smbc_setOptionUseKerberos'>smbc_setOptionUseKerberos</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setOptionUserData.html'
+                               title='smbclient_sys::smbc_setOptionUserData'>smbc_setOptionUserData</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setServerCacheData.html'
+                               title='smbclient_sys::smbc_setServerCacheData'>smbc_setServerCacheData</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setTimeout.html'
+                               title='smbclient_sys::smbc_setTimeout'>smbc_setTimeout</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setUser.html'
+                               title='smbclient_sys::smbc_setUser'>smbc_setUser</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setWorkgroup.html'
+                               title='smbclient_sys::smbc_setWorkgroup'>smbc_setWorkgroup</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_set_context.html'
+                               title='smbclient_sys::smbc_set_context'>smbc_set_context</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_set_credentials.html'
+                               title='smbclient_sys::smbc_set_credentials'>smbc_set_credentials</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_set_credentials_with_fallback.html'
+                               title='smbclient_sys::smbc_set_credentials_with_fallback'>smbc_set_credentials_with_fallback</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_setxattr.html'
+                               title='smbclient_sys::smbc_setxattr'>smbc_setxattr</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_stat.html'
+                               title='smbclient_sys::smbc_stat'>smbc_stat</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_statvfs.html'
+                               title='smbclient_sys::smbc_statvfs'>smbc_statvfs</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_telldir.html'
+                               title='smbclient_sys::smbc_telldir'>smbc_telldir</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_thread_impl.html'
+                               title='smbclient_sys::smbc_thread_impl'>smbc_thread_impl</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_thread_posix.html'
+                               title='smbclient_sys::smbc_thread_posix'>smbc_thread_posix</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_unlink.html'
+                               title='smbclient_sys::smbc_unlink'>smbc_unlink</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_unlink_print_job.html'
+                               title='smbclient_sys::smbc_unlink_print_job'>smbc_unlink_print_job</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_urldecode.html'
+                               title='smbclient_sys::smbc_urldecode'>smbc_urldecode</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_urlencode.html'
+                               title='smbclient_sys::smbc_urlencode'>smbc_urlencode</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_utimes.html'
+                               title='smbclient_sys::smbc_utimes'>smbc_utimes</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_version.html'
+                               title='smbclient_sys::smbc_version'>smbc_version</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.smbc_write.html'
+                               title='smbclient_sys::smbc_write'>smbc_write</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.SMBCCTX.html'
+                               title='smbclient_sys::SMBCCTX'>SMBCCTX</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.SMBCFILE.html'
+                               title='smbclient_sys::SMBCFILE'>SMBCFILE</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.SMBCSRV.html'
+                               title='smbclient_sys::SMBCSRV'>SMBCSRV</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_add_cached_srv_fn.html'
+                               title='smbclient_sys::smbc_add_cached_srv_fn'>smbc_add_cached_srv_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_bool.html'
+                               title='smbclient_sys::smbc_bool'>smbc_bool</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_check_server_fn.html'
+                               title='smbclient_sys::smbc_check_server_fn'>smbc_check_server_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_chmod_fn.html'
+                               title='smbclient_sys::smbc_chmod_fn'>smbc_chmod_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_close_fn.html'
+                               title='smbclient_sys::smbc_close_fn'>smbc_close_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_closedir_fn.html'
+                               title='smbclient_sys::smbc_closedir_fn'>smbc_closedir_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_creat_fn.html'
+                               title='smbclient_sys::smbc_creat_fn'>smbc_creat_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_fstat_fn.html'
+                               title='smbclient_sys::smbc_fstat_fn'>smbc_fstat_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_fstatdir_fn.html'
+                               title='smbclient_sys::smbc_fstatdir_fn'>smbc_fstatdir_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_fstatvfs_fn.html'
+                               title='smbclient_sys::smbc_fstatvfs_fn'>smbc_fstatvfs_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_ftruncate_fn.html'
+                               title='smbclient_sys::smbc_ftruncate_fn'>smbc_ftruncate_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_get_auth_data_fn.html'
+                               title='smbclient_sys::smbc_get_auth_data_fn'>smbc_get_auth_data_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_get_auth_data_with_context_fn.html'
+                               title='smbclient_sys::smbc_get_auth_data_with_context_fn'>smbc_get_auth_data_with_context_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_get_cached_srv_fn.html'
+                               title='smbclient_sys::smbc_get_cached_srv_fn'>smbc_get_cached_srv_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_getdents_fn.html'
+                               title='smbclient_sys::smbc_getdents_fn'>smbc_getdents_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_getxattr_fn.html'
+                               title='smbclient_sys::smbc_getxattr_fn'>smbc_getxattr_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_list_print_job_fn.html'
+                               title='smbclient_sys::smbc_list_print_job_fn'>smbc_list_print_job_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_list_print_jobs_fn.html'
+                               title='smbclient_sys::smbc_list_print_jobs_fn'>smbc_list_print_jobs_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_listxattr_fn.html'
+                               title='smbclient_sys::smbc_listxattr_fn'>smbc_listxattr_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_lseek_fn.html'
+                               title='smbclient_sys::smbc_lseek_fn'>smbc_lseek_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_lseekdir_fn.html'
+                               title='smbclient_sys::smbc_lseekdir_fn'>smbc_lseekdir_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_mkdir_fn.html'
+                               title='smbclient_sys::smbc_mkdir_fn'>smbc_mkdir_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_open_fn.html'
+                               title='smbclient_sys::smbc_open_fn'>smbc_open_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_open_print_job_fn.html'
+                               title='smbclient_sys::smbc_open_print_job_fn'>smbc_open_print_job_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_opendir_fn.html'
+                               title='smbclient_sys::smbc_opendir_fn'>smbc_opendir_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_print_file_fn.html'
+                               title='smbclient_sys::smbc_print_file_fn'>smbc_print_file_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_purge_cached_fn.html'
+                               title='smbclient_sys::smbc_purge_cached_fn'>smbc_purge_cached_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_read_fn.html'
+                               title='smbclient_sys::smbc_read_fn'>smbc_read_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_readdir_fn.html'
+                               title='smbclient_sys::smbc_readdir_fn'>smbc_readdir_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_remove_cached_srv_fn.html'
+                               title='smbclient_sys::smbc_remove_cached_srv_fn'>smbc_remove_cached_srv_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_remove_unused_server_fn.html'
+                               title='smbclient_sys::smbc_remove_unused_server_fn'>smbc_remove_unused_server_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_removexattr_fn.html'
+                               title='smbclient_sys::smbc_removexattr_fn'>smbc_removexattr_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_rename_fn.html'
+                               title='smbclient_sys::smbc_rename_fn'>smbc_rename_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_rmdir_fn.html'
+                               title='smbclient_sys::smbc_rmdir_fn'>smbc_rmdir_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_setxattr_fn.html'
+                               title='smbclient_sys::smbc_setxattr_fn'>smbc_setxattr_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_share_mode.html'
+                               title='smbclient_sys::smbc_share_mode'>smbc_share_mode</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_smb_encrypt_level.html'
+                               title='smbclient_sys::smbc_smb_encrypt_level'>smbc_smb_encrypt_level</a></td>
+                        <td class='docblock short'>
+                             <p>Values for option SMB Encryption Level, as set and retrieved with
+smbc_setOptionSmbEncryptionLevel() and smbc_getOptionSmbEncryptionLevel()</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_stat_fn.html'
+                               title='smbclient_sys::smbc_stat_fn'>smbc_stat_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_statvfs_fn.html'
+                               title='smbclient_sys::smbc_statvfs_fn'>smbc_statvfs_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_telldir_fn.html'
+                               title='smbclient_sys::smbc_telldir_fn'>smbc_telldir_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_unlink_fn.html'
+                               title='smbclient_sys::smbc_unlink_fn'>smbc_unlink_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_unlink_print_job_fn.html'
+                               title='smbclient_sys::smbc_unlink_print_job_fn'>smbc_unlink_print_job_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_utimes_fn.html'
+                               title='smbclient_sys::smbc_utimes_fn'>smbc_utimes_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_vfs_feature.html'
+                               title='smbclient_sys::smbc_vfs_feature'>smbc_vfs_feature</a></td>
+                        <td class='docblock short'>
+                             <p>Capabilities set in the f_flag field of struct statvfs, from
+smbc_statvfs(). These may be OR-ed together to reflect a full set of
+available capabilities.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.smbc_write_fn.html'
+                               title='smbclient_sys::smbc_write_fn'>smbc_write_fn</a></td>
+                        <td class='docblock short'>
+                             
+                        </td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div>
+            <div class="shortcuts">
+                <h1>Keyboard Shortcuts</h1>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h1>Search Tricks</h1>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>typedef</code> (or
+                    <code>tdef</code>).
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "smbclient_sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

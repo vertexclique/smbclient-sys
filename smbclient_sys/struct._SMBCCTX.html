@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `_SMBCCTX` struct in crate `smbclient_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, _SMBCCTX">
+
+    <title>smbclient_sys::_SMBCCTX - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>smbclient_sys</a></p><script>window.sidebarCurrent = {name: '_SMBCCTX', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>smbclient_sys</a>::<wbr><a class='struct' href=''>_SMBCCTX</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-1014' class='srclink' href='../src/smbclient_sys/lib.rs.html#372-412' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct _SMBCCTX {
+    pub debug: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub netbios_name: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='../libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub workgroup: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='../libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub user: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='../libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub timeout: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub open: <a class='type' href='../smbclient_sys/type.smbc_open_fn.html' title='smbclient_sys::smbc_open_fn'>smbc_open_fn</a>,
+    pub creat: <a class='type' href='../smbclient_sys/type.smbc_creat_fn.html' title='smbclient_sys::smbc_creat_fn'>smbc_creat_fn</a>,
+    pub read: <a class='type' href='../smbclient_sys/type.smbc_read_fn.html' title='smbclient_sys::smbc_read_fn'>smbc_read_fn</a>,
+    pub write: <a class='type' href='../smbclient_sys/type.smbc_write_fn.html' title='smbclient_sys::smbc_write_fn'>smbc_write_fn</a>,
+    pub unlink: <a class='type' href='../smbclient_sys/type.smbc_unlink_fn.html' title='smbclient_sys::smbc_unlink_fn'>smbc_unlink_fn</a>,
+    pub rename: <a class='type' href='../smbclient_sys/type.smbc_rename_fn.html' title='smbclient_sys::smbc_rename_fn'>smbc_rename_fn</a>,
+    pub lseek: <a class='type' href='../smbclient_sys/type.smbc_lseek_fn.html' title='smbclient_sys::smbc_lseek_fn'>smbc_lseek_fn</a>,
+    pub stat: <a class='type' href='../smbclient_sys/type.smbc_stat_fn.html' title='smbclient_sys::smbc_stat_fn'>smbc_stat_fn</a>,
+    pub fstat: <a class='type' href='../smbclient_sys/type.smbc_fstat_fn.html' title='smbclient_sys::smbc_fstat_fn'>smbc_fstat_fn</a>,
+    pub close_fn: <a class='type' href='../smbclient_sys/type.smbc_close_fn.html' title='smbclient_sys::smbc_close_fn'>smbc_close_fn</a>,
+    pub opendir: <a class='type' href='../smbclient_sys/type.smbc_opendir_fn.html' title='smbclient_sys::smbc_opendir_fn'>smbc_opendir_fn</a>,
+    pub closedir: <a class='type' href='../smbclient_sys/type.smbc_closedir_fn.html' title='smbclient_sys::smbc_closedir_fn'>smbc_closedir_fn</a>,
+    pub readdir: <a class='type' href='../smbclient_sys/type.smbc_readdir_fn.html' title='smbclient_sys::smbc_readdir_fn'>smbc_readdir_fn</a>,
+    pub getdents: <a class='type' href='../smbclient_sys/type.smbc_getdents_fn.html' title='smbclient_sys::smbc_getdents_fn'>smbc_getdents_fn</a>,
+    pub mkdir: <a class='type' href='../smbclient_sys/type.smbc_mkdir_fn.html' title='smbclient_sys::smbc_mkdir_fn'>smbc_mkdir_fn</a>,
+    pub rmdir: <a class='type' href='../smbclient_sys/type.smbc_rmdir_fn.html' title='smbclient_sys::smbc_rmdir_fn'>smbc_rmdir_fn</a>,
+    pub telldir: <a class='type' href='../smbclient_sys/type.smbc_telldir_fn.html' title='smbclient_sys::smbc_telldir_fn'>smbc_telldir_fn</a>,
+    pub lseekdir: <a class='type' href='../smbclient_sys/type.smbc_lseekdir_fn.html' title='smbclient_sys::smbc_lseekdir_fn'>smbc_lseekdir_fn</a>,
+    pub fstatdir: <a class='type' href='../smbclient_sys/type.smbc_fstatdir_fn.html' title='smbclient_sys::smbc_fstatdir_fn'>smbc_fstatdir_fn</a>,
+    pub chmod: <a class='type' href='../smbclient_sys/type.smbc_chmod_fn.html' title='smbclient_sys::smbc_chmod_fn'>smbc_chmod_fn</a>,
+    pub utimes: <a class='type' href='../smbclient_sys/type.smbc_utimes_fn.html' title='smbclient_sys::smbc_utimes_fn'>smbc_utimes_fn</a>,
+    pub setxattr: <a class='type' href='../smbclient_sys/type.smbc_setxattr_fn.html' title='smbclient_sys::smbc_setxattr_fn'>smbc_setxattr_fn</a>,
+    pub getxattr: <a class='type' href='../smbclient_sys/type.smbc_getxattr_fn.html' title='smbclient_sys::smbc_getxattr_fn'>smbc_getxattr_fn</a>,
+    pub removexattr: <a class='type' href='../smbclient_sys/type.smbc_removexattr_fn.html' title='smbclient_sys::smbc_removexattr_fn'>smbc_removexattr_fn</a>,
+    pub listxattr: <a class='type' href='../smbclient_sys/type.smbc_listxattr_fn.html' title='smbclient_sys::smbc_listxattr_fn'>smbc_listxattr_fn</a>,
+    pub print_file: <a class='type' href='../smbclient_sys/type.smbc_print_file_fn.html' title='smbclient_sys::smbc_print_file_fn'>smbc_print_file_fn</a>,
+    pub open_print_job: <a class='type' href='../smbclient_sys/type.smbc_open_print_job_fn.html' title='smbclient_sys::smbc_open_print_job_fn'>smbc_open_print_job_fn</a>,
+    pub list_print_jobs: <a class='type' href='../smbclient_sys/type.smbc_list_print_jobs_fn.html' title='smbclient_sys::smbc_list_print_jobs_fn'>smbc_list_print_jobs_fn</a>,
+    pub unlink_print_job: <a class='type' href='../smbclient_sys/type.smbc_unlink_print_job_fn.html' title='smbclient_sys::smbc_unlink_print_job_fn'>smbc_unlink_print_job_fn</a>,
+    pub callbacks: <a class='struct' href='../smbclient_sys/struct._smbc_callbacks.html' title='smbclient_sys::_smbc_callbacks'>_smbc_callbacks</a>,
+    pub reserved: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='../libc/types/common/c95/enum.c_void.html' title='libc::types::common::c95::c_void'>c_void</a></a>,
+    pub flags: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub options: <a class='struct' href='../smbclient_sys/struct._smbc_options.html' title='smbclient_sys::_smbc_options'>_smbc_options</a>,
+    pub internal: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='../smbclient_sys/enum.SMBC_internal_data.html' title='smbclient_sys::SMBC_internal_data'>SMBC_internal_data</a></a>,
+}</pre><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.debug'><code>debug</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.netbios_name'><code>netbios_name</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.workgroup'><code>workgroup</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.user'><code>user</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.timeout'><code>timeout</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.open'><code>open</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.creat'><code>creat</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.read'><code>read</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.write'><code>write</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.unlink'><code>unlink</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.rename'><code>rename</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.lseek'><code>lseek</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.stat'><code>stat</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.fstat'><code>fstat</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.close_fn'><code>close_fn</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.opendir'><code>opendir</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.closedir'><code>closedir</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.readdir'><code>readdir</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.getdents'><code>getdents</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.mkdir'><code>mkdir</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.rmdir'><code>rmdir</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.telldir'><code>telldir</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.lseekdir'><code>lseekdir</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.fstatdir'><code>fstatdir</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.chmod'><code>chmod</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.utimes'><code>utimes</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.setxattr'><code>setxattr</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.getxattr'><code>getxattr</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.removexattr'><code>removexattr</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.listxattr'><code>listxattr</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.print_file'><code>print_file</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.open_print_job'><code>open_print_job</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.list_print_jobs'><code>list_print_jobs</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.unlink_print_job'><code>unlink_print_job</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.callbacks'><code>callbacks</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.reserved'><code>reserved</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.flags'><code>flags</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.options'><code>options</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.internal'><code>internal</code></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../smbclient_sys/struct._SMBCCTX.html' title='smbclient_sys::_SMBCCTX'>_SMBCCTX</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; Self</code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../smbclient_sys/struct._SMBCCTX.html' title='smbclient_sys::_SMBCCTX'>_SMBCCTX</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; Self</code></h4>
+</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../smbclient_sys/struct._SMBCCTX.html' title='smbclient_sys::_SMBCCTX'>_SMBCCTX</a></code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div>
+            <div class="shortcuts">
+                <h1>Keyboard Shortcuts</h1>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h1>Search Tricks</h1>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>typedef</code> (or
+                    <code>tdef</code>).
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "smbclient_sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>
