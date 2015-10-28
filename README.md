@@ -1,5 +1,7 @@
 smbclient-sys
 =====================
+
+[![Join the chat at https://gitter.im/vertexclique/smbclient-sys](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vertexclique/smbclient-sys?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![Samba](http://wiki.univention.de/images/thumb/6/6d/Logo_Samba.png/300px-Logo_Samba.png)
 
 FFI wrapper around libsmbclient which is the part of SAMBA implementation.
