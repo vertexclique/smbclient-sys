@@ -23,8 +23,8 @@ name = "smbclient_sys"
 path = "src/lib.rs"
 
 [dependencies]
-libc = "0.1.8"
-nix = "0.4.1"
+libc = "~0.2"
+nix = "~0.11"
 
 [build-dependencies]
 pkg-config = "0.3.5"

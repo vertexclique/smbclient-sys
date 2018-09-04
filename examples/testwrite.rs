@@ -38,7 +38,7 @@ fn main() {
             let casted_ptr: *mut c_void = mem::transmute(the_cyberpunk_anime);
 
             // Write it through
-            let writeval: i64 = smbc::smbc_write(retval, casted_ptr, the_cyberpunk_anime.len() as size_t);
+            let writeval = smbc::smbc_write(retval, casted_ptr, the_cyberpunk_anime.len() );
             if writeval > 0 {
                 println!("Write successful...");
             } else {
