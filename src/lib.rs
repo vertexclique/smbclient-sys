@@ -11,7 +11,7 @@ use std::{option, mem, clone, default};
 use libc::{c_int, c_char, c_double, c_void, c_uchar, c_uint, c_ulong, c_ushort, size_t, time_t,
 	mode_t, ssize_t, off_t, stat, timeval};
 
-use nix::sys::statvfs::vfs::Statvfs;
+use nix::sys::statvfs::Statvfs;
 
 static SMBC_BASE_FD        : i32 = 10000; /* smallest file descriptor returned */
 static SMBC_WORKGROUP      : i32 = 1;

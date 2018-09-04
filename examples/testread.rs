@@ -38,7 +38,7 @@ fn main() {
             println!("Accessed to specified SMB file");
 
             // Read file to buffer
-            let read_val: i64 = smbc::smbc_read(retval, file_contents.as_mut_ptr(), dstlen);
+            let read_val = smbc::smbc_read(retval, file_contents.as_mut_ptr(), dstlen);
             if read_val > 0 {
                 // File successfully read, print contents to stdout
 
